@@ -1,3 +1,23 @@
 
 ********** Installation & Setup **********
 
+
+RESOURCES:
+- www.typescriptlang.org
+- The TypeScript Playground
+- vscode or other editors
+
+
+Installation:
+npm install -g typescript
+
+
+Using TypeScript:
+- File Extensions:
+    .ts
+    .tsx    react write jsx syntax with typescript
+
+
+Compiling TS to JS:
+Terminal:
+> tsc basics.ts
