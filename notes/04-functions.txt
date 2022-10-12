@@ -1,0 +1,35 @@
+
+********** Functions **********
+
+Function Parameter Types:
+- in TS we can specify the type of function parameters in a function definition.
+- this allows TS to enforce the types for the values being passed into your function.
+- typing parameters is just like typing variables!
+
+
+Function Return Type:
+- we can specify the type returned by a function. Even though TS can often infer this, explicitly annotate
+- add the type annotation after the function parameter list
+
+
+Anonymous Functions:
+- when TS can infer how an unnamed function is going to be called, it can automatically infer it-s parameters' types
+
+
+Void Type:
+- void is a return type for functions that don't return anything. It means that -- this function is void of any data.
+- TS can infer this type fairly well, but sometimes it may want you to annotate a function with a void return explicitly.
+
+
+Never Type:
+- the 'never' type represents values that NEVER occur. We might use it to annotate a function that always throws an exception, or a function that never finishes executing.
+- Don't confuse with void - void returns undefined or null, which is technically still a type of value. With never, a function doesn't even finish executing.
+
+
+
+=========== Exercise: functions exercise ===========
+
+1. solve functionsExercise.ts
+2. Run in Terminal:
+    > tsc functionsExercise.ts
+    > node functionsExercise.ts

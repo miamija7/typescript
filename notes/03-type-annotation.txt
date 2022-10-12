@@ -1,0 +1,23 @@
+
+********** File Type Annotation **********
+
+
+Where do we apply TS?
+- Functions: "This function returns an array of strings" or "This function accepts two numbers and returns a number"
+- Objects: "This object must have a property called colors, set to some array of strings"
+- Variables: "This variable is a string"
+
+
+TS Variable Annotation:
+- Ex: let myVar: type = value
+
+
+Type Inference:
+- refers to the TS compiler's ability to infer types from certain values in your code.
+- TS can remember a value's type even if you didn't provide a type annotation, and it will enforce that type moving forward.
+
+
+Any:
+- 'any' is an escape hatch! It turns off type checking for this variable, so you can do your thing.
+- NOTE: it sort of defeats the purpose of TS and types, so use it sparingly
+
