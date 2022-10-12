@@ -2,7 +2,7 @@
 
 let movieTitle : string = "Amadeus";
 movieTitle = "Arrival";
-movieTitle = 9;
+// movieTitle = 9;
 movieTitle.toUpperCase();
 
 let numCatLives : number = 9;
@@ -11,7 +11,7 @@ numCatLives += 1;
 
 let gameOver: boolean = false;
 gameOver = true;
-gameOver = "true";
+// gameOver = "true";
 
 null
 undefined
@@ -25,11 +25,11 @@ let foo: undefined = undefined;
 
 let tvShow = "Olive Kitteridge";
 tvShow = "The Other Two";
-tvShow = false;
+// tvShow = false;
 
 let isFunny = false;
 isFunny = true;
-isFunny = "abcd";
+// isFunny = "abcd";
 
 
 
