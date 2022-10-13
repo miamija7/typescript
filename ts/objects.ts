@@ -130,3 +130,23 @@
 
     console.log("$" + calculatePayout(mySong));
     printSong(mySong);
+
+
+
+///////// TYPE ALIAS - OPTIONAL PROPERTIES /////////
+type Coordinates = {
+    x: number;
+    y: number;
+    z?: number;
+}
+
+const myCord: Coordinates = {
+    x: 34,
+    y: 6,
+}
+
+const yourCord: Coordinates = {
+    x: 34,
+    y: 6,
+    z: 89   // optional! :)
+}
