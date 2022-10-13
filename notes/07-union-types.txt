@@ -1,0 +1,21 @@
+
+********** Union Types **********
+
+Union Types:
+- union types allow us to give a value a few different possible types
+- if the eventual value's type is included, TS will hbe happy
+- we can create a union type by using the single | (pipe) to separate desired types
+- "this thing can be this or this"
+
+
+Unions - Narrowing the Type:
+- narrowing is simply doing a type check before working with a value
+- handle a string vs number differently
+- unions allow multiple types of value, so check type before working on input
+
+
+Literal Types:
+- literal types are not just types... but values themselves too
+- fine-tunes type options for TS to enforce
+- almost always used with union type
+
