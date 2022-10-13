@@ -24,5 +24,10 @@ Excess Properties:
 
 
 Type Alias
+- reusing a type and giving it a name
 - Instead of writing out object types in an annotation, we can declare them separately in a type alias, which is simply the desired shape of the object
 - This allows us to make our code more readable and even reuse the types elsewhere in our code.
+
+
+Nested Objects:
+-
