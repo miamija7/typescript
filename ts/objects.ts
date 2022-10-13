@@ -173,3 +173,19 @@
 
 
 ///////// INTERSECTION TYPES /////////
+
+    type Circle = {
+        radius: number;
+    }
+
+    type Colorful = {
+        color: string;
+    }
+
+    type ColorfulCircle = Circle & Colorful & { mood: string };
+
+    const happyFace: ColorfulCircle = {
+        radius: 9,
+        color: 'yellow',
+        mood: "smiley"
+    }
