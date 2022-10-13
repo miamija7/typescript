@@ -1,0 +1,8 @@
+
+********** Tuples & Enums **********
+
+Tuples:
+- arrays fixed in length & type
+- tuples are a special type exclusive to TypeScript
+- tuples DO NOT exist in JavaScript
+- tuples are arrays of fixed lengths and ordered with specific types--like super rigid arrays
