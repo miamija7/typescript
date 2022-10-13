@@ -133,20 +133,43 @@
 
 
 
-///////// TYPE ALIAS - OPTIONAL PROPERTIES /////////
-type Coordinates = {
-    x: number;
-    y: number;
-    z?: number;
-}
+///////// OPTIONAL PROPERTIES in OBJECTS /////////
 
-const myCord: Coordinates = {
-    x: 34,
-    y: 6,
-}
+    type Coordinates = {
+        x: number;
+        y: number;
+        z?: number;
+    }
 
-const yourCord: Coordinates = {
-    x: 34,
-    y: 6,
-    z: 89   // optional! :)
-}
+    const myCord: Coordinates = {
+        x: 34,
+        y: 6,
+    }
+
+    const yourCord: Coordinates = {
+        x: 34,
+        y: 6,
+        z: 89   // optional! :)
+    }
+
+
+
+///////// READONLY MODIFIER in OBJECTS /////////
+
+    // readonly
+    type User = {
+        readonly id: number;
+        username: string;
+    }
+
+    const user: User = {
+        id: 12345,
+        username: "cat_lady"
+    }
+
+    // user.id = 22; // Error
+    user.username = "catLady";
+
+
+
+///////// INTERSECTION TYPES /////////
