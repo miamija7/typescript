@@ -1,5 +1,5 @@
 ///////// OBJECT /////////
-const dog = {
+    const dog = {
         name: "Elton",
         breed: "Australian Shepherd",
         age: 0.5
