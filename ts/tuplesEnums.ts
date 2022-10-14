@@ -18,6 +18,8 @@
     // goodResponse.pop();
     // goodResponse.pop();
 
+    const responses: HTTPResponse[] = [[404, "Not Found"], [200, "OK"]];
+
 
 
 
