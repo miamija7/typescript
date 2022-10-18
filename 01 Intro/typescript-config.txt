@@ -1,0 +1,70 @@
+
+********** Configuring TypeScript **********
+
+terminal:
+> tsc --init            creates tsconfig.json
+
+> touch index.ts        create and write some TS
+> tsc index.ts          compiles TS to JS
+> tsc -w index.ts       watch mode automatically recompiles TS to JS on changes
+
+> tsc                   will compile all TS files to JS
+> tsc -w                will set to watch mode all TS files
+
+
+
+tsconfig.json:
+(OPTION: files & include/exclude) - specify ts files to compile
+    {
+        "compilerOptions": {
+            ...
+        },
+        "files": ["farmStand.ts", "index.ts"]
+        - - - - - OR - - - - -
+        "include": ["src"],
+        "exclude": ["src/dontTouch.ts", "**.test.ts", "node_modules"]
+    }
+
+(OPTION: outDir) - specify where to place compiled js
+** NOTE: it is common to have [src] & [dist] directory **
+    {
+        "compilerOptions": {
+            ...
+            "outDir": "./dist",
+        },
+        "include": ["src"],
+    }
+
+
+(OPTION: target) - specify what version of JS to compile to
+    {
+        "compilerOptions": {
+            ...
+            "target": "es2015",
+        }
+    }
+
+(OPTION: strict) - enable/disable type-checking options
+** NOTE: strict defaults to true **
+    {
+        "compilerOptions": {
+            ...
+            "strict": false,
+            "noImplicitAny": true,
+            "strictNullChecks": true,
+        }
+    }
+
+(ADDITIONAL OPTIONS)
+    {
+        "compilerOptions": {
+            ...
+            "lib": [],                      // specify runtime environment
+            "module": "commonjs",           // specify module code to generate
+            "allowJs": true,                // allow JS files to ba a part of your program
+            "checkJs": true,                // enable error reporting in JS
+            "sourceMap" : true,             // create source map files for emitted JS
+            "noEmit": true,                 // will not compile files
+            "noEmitOnError": true,          // disable emit if errors are reported in compilation
+        }
+    }
