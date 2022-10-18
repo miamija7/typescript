@@ -1,3 +1,22 @@
 
 ********** Interfaces **********
 
+Interfaces:
+- most commonly used pieces of ts
+- very similar type aliases
+- used to create reusable, modular types
+- they describe the shapes of objects
+- interfaces can re-open to add new properties
+
+
+Types vs. Interfaces:
+Interfaces:                                         Types:
+can ONLY describe the shape of an object            can describe literal types and shapes
+can reopen/add on                                   cannot reopen/add on
+Extending (more OOP)                                Intersection types (&)
+
+
+Extending Interfaces:
+- extend/inherit interfaces
+
+
