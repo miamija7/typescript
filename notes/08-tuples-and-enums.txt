@@ -6,3 +6,22 @@ Tuples:
 - tuples are a special type exclusive to TypeScript
 - tuples DO NOT exist in JavaScript
 - tuples are arrays of fixed lengths and ordered with specific types--like super rigid arrays
+
+
+Enums:
+- enums allow us to define a set of named constants
+- constants can be numeric or string values
+- limit responses
+    + UP, DOWN, LEFT, RIGHT
+    + PENDING, SHIPPED, DELIVERED
+- enums are a set of named constants
+
+
+Enums Compile to JS...
+- almost all typescript will be removed on JS compile
+- enums result in additional JS code
+- enums are phasing away because it's creating new JS code
+- "pollutes" JS code
+- to not populate JS... add "const" to enum declaration!
+    // make a const enum
+    const enum OrderStatus{...}
